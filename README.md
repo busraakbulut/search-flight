@@ -2,14 +2,19 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+## To work on your local
 
+Clone repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/busraakbulut/search-flight.git
+```
+To upload all dependencies
+```bash
+ npm install
+```
+run the work
+```bash
+npm run all
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
