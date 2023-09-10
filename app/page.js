@@ -81,7 +81,7 @@ const page = () => {
 		if (endDate <= newDate) {
 			swal.defaultSwal(
 				"Hata",
-				"Dönüş tarihi, başlangıç tarihinden önceki bir tarih olamaz.",
+				"Return date cannot be earlier than the departure date.",
 				"error",
 				2000
 			);
@@ -106,7 +106,7 @@ const page = () => {
 		if (date <= startDate) {
 			swal.defaultSwal(
 				"Hata",
-				"Dönüş tarihi, başlangıç tarihinden önceki bir tarih olamaz.",
+				"Return date cannot be earlier than the departure date.",
 				"error",
 				2000
 			);
