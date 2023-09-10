@@ -1,206 +1,119 @@
 {
-  "flights": [
-    {
-      "id": 1,
-      "sourceAirportCode": "JFK",
-      "destinationAirportCode": "LAX",
-      "date": "2023-09-15",
-      "itineraryType": "One-way",
-      "returnDate": null,
-      "numAdults": 2,
-      "classOfService": "Economy",
-      "price": 350,
-      "airline": "Delta Airlines",
-      "departureTime": "08:00 AM",
-      "arrivalTime": "11:00 AM",
-      "layovers": 0,
-      "duration": "3 hours"
-    },
-    {
-      "id": 2,
-      "sourceAirportCode": "SFO",
-      "destinationAirportCode": "ORD",
-      "date": "2023-10-05",
-      "itineraryType": "Round-trip",
-      "returnDate": "2023-10-15",
-      "numAdults": 1,
-      "classOfService": "Business",
-      "price": 1200,
-      "airline": "American Airlines",
-      "departureTime": "10:30 AM",
-      "arrivalTime": "04:45 PM",
-      "layovers": 1,
-      "outboundDuration": "6 hours 15 minutes",
-      "returnDuration": "6 hours 15 minutes"
-    },
-    {
-      "id": 3,
-      "sourceAirportCode": "LHR",
-      "destinationAirportCode": "CDG",
-      "date": "2023-11-20",
-      "itineraryType": "One-way",
-      "returnDate": null,
-      "numAdults": 3,
-      "classOfService": "First Class",
-      "price": 2500,
-      "airline": "British Airways",
-      "departureTime": "09:15 AM",
-      "arrivalTime": "11:30 AM",
-      "layovers": 0,
-      "duration": "2 hours 15 minutes"
-    },
-    {
-      "id": 4,
-      "sourceAirportCode": "LAX",
-      "destinationAirportCode": "JFK",
-      "date": "2023-12-10",
-      "itineraryType": "Round-trip",
-      "returnDate": "2023-12-20",
-      "numAdults": 2,
-      "classOfService": "Economy",
-      "price": 400,
-      "airline": "United Airlines",
-      "departureTime": "12:45 PM",
-      "arrivalTime": "09:00 PM",
-      "layovers": 1,
-      "outboundDuration": "6 hours 15 minutes",
-      "returnDuration": "6 hours 15 minutes"
-    },
-    {
-      "id": 5,
-      "sourceAirportCode": "ORD",
-      "destinationAirportCode": "DFW",
-      "date": "2023-09-18",
-      "itineraryType": "One-way",
-      "returnDate": null,
-      "numAdults": 2,
-      "classOfService": "Economy",
-      "price": 250,
-      "airline": "United Airlines",
-      "departureTime": "10:00 AM",
-      "arrivalTime": "12:45 PM",
-      "layovers": 0,
-      "duration": "2 hours 45 minutes"
-    },
-    {
-      "id": 6,
-      "sourceAirportCode": "LAX",
-      "destinationAirportCode": "MIA",
-      "date": "2023-09-25",
-      "itineraryType": "Round-trip",
-      "returnDate": "2023-09-27",
-      "numAdults": 1,
-      "classOfService": "First Class",
-      "price": 1100,
-      "airline": "Delta Airlines",
-      "departureTime": "11:45 AM",
-      "arrivalTime": "07:15 PM",
-      "layovers": 1,
-      "outboundDuration": "7 hours 30 minutes",
-      "returnDuration": "7 hours 30 minutes"
-    },
-    {
-      "id": 7,
-      "sourceAirportCode": "JFK",
-      "destinationAirportCode": "SFO",
-      "date": "2023-09-20",
-      "itineraryType": "One-way",
-      "returnDate": null,
-      "numAdults": 1,
-      "classOfService": "Business",
-      "price": 750,
-      "airline": "American Airlines",
-      "departureTime": "09:30 AM",
-      "arrivalTime": "01:30 PM",
-      "layovers": 0,
-      "duration": "4 hours"
-    },
-    {
-      "id": 8
-    },
-    {
-      "formData": {
-        "sourceAirportCode": "JFK",
-        "destinationAirportCode": "LAX",
-        "date": "2023-09-15",
-        "itineraryType": "oneway",
-        "numAdults": "2",
-        "classOfService": "economy",
-        "returnDate": ""
-      },
-      "id": 9
-    },
-    {
-      "formData": {
-        "sourceAirportCode": "",
-        "destinationAirportCode": "",
-        "date": "",
-        "itineraryType": "",
-        "numAdults": "",
-        "classOfService": "",
-        "returnDate": ""
-      },
-      "id": 10
-    },
-    {
-      "formData": {
-        "sourceAirportCode": "",
-        "destinationAirportCode": "",
-        "date": "",
-        "itineraryType": "",
-        "numAdults": "",
-        "classOfService": "",
-        "returnDate": ""
-      },
-      "id": 11
-    },
-    {
-      "formData": {
-        "sourceAirportCode": "JFK",
-        "destinationAirportCode": "LAX",
-        "date": "2023-09-15",
-        "itineraryType": "oneway",
-        "numAdults": "2",
-        "classOfService": "economy",
-        "returnDate": ""
-      },
-      "id": 12
-    },
-    {
-      "formData": {
-        "sourceAirportCode": "JFK",
-        "destinationAirportCode": "LAX",
-        "date": "2023-09-15",
-        "itineraryType": "oneway",
-        "numAdults": "2",
-        "classOfService": "economy",
-        "returnDate": ""
-      },
-      "id": 13
-    },
-    {
-      "formData": {
-        "sourceAirportCode": "JFK",
-        "destinationAirportCode": "LAX",
-        "date": "2023-09-15",
-        "itineraryType": "oneway",
-        "numAdults": "2",
-        "classOfService": "economy",
-        "returnDate": ""
-      },
-      "id": 14
-    },
-    {
-      "formData": {
-        "sourceAirportCode": "LAX",
-        "destinationAirportCode": "SFO",
-        "date": "2023-09-15",
-        "itineraryType": "oneway",
-        "numAdults": "2",
-        "classOfService": "economy",
-        "returnDate": ""
-      },
-      "id": 15
-    }
-  ]
+	"flights": [
+		{
+			"id": 1,
+			"sourceAirportCode": "JFK",
+			"destinationAirportCode": "LAX",
+			"date": "2023-09-15",
+			"itineraryType": "One-way",
+			"returnDate": "",
+			"numAdults": 2,
+			"classOfService": "Economy",
+			"price": 350,
+			"airline": "Delta Airlines",
+			"departureTime": "08:00 AM",
+			"arrivalTime": "11:00 AM",
+			"layovers": 0,
+			"duration": "3 hours"
+		},
+		{
+			"id": 2,
+			"sourceAirportCode": "SFO",
+			"destinationAirportCode": "ORD",
+			"date": "2023-10-05",
+			"itineraryType": "Round-trip",
+			"returnDate": "2023-10-15",
+			"numAdults": 1,
+			"classOfService": "Business",
+			"price": 1200,
+			"airline": "American Airlines",
+			"departureTime": "10:30 AM",
+			"arrivalTime": "04:45 PM",
+			"layovers": 1,
+			"outboundDuration": "6 hours 15 minutes",
+			"returnDuration": "6 hours 15 minutes"
+		},
+		{
+			"id": 3,
+			"sourceAirportCode": "LHR",
+			"destinationAirportCode": "CDG",
+			"date": "2023-11-20",
+			"itineraryType": "One-way",
+			"returnDate": "",
+			"numAdults": 3,
+			"classOfService": "First Class",
+			"price": 2500,
+			"airline": "British Airways",
+			"departureTime": "09:15 AM",
+			"arrivalTime": "11:30 AM",
+			"layovers": 0,
+			"duration": "2 hours 15 minutes"
+		},
+		{
+			"id": 4,
+			"sourceAirportCode": "LAX",
+			"destinationAirportCode": "JFK",
+			"date": "2023-12-10",
+			"itineraryType": "Round-trip",
+			"returnDate": "2023-12-20",
+			"numAdults": 2,
+			"classOfService": "Economy",
+			"price": 400,
+			"airline": "United Airlines",
+			"departureTime": "12:45 PM",
+			"arrivalTime": "09:00 PM",
+			"layovers": 1,
+			"outboundDuration": "6 hours 15 minutes",
+			"returnDuration": "6 hours 15 minutes"
+		},
+		{
+			"id": 5,
+			"sourceAirportCode": "ORD",
+			"destinationAirportCode": "DFW",
+			"date": "2023-09-18",
+			"itineraryType": "One-way",
+			"returnDate": "",
+			"numAdults": 2,
+			"classOfService": "Economy",
+			"price": 250,
+			"airline": "United Airlines",
+			"departureTime": "10:00 AM",
+			"arrivalTime": "12:45 PM",
+			"layovers": 0,
+			"duration": "2 hours 45 minutes"
+		},
+		{
+			"id": 6,
+			"sourceAirportCode": "LAX",
+			"destinationAirportCode": "MIA",
+			"date": "2023-09-25",
+			"itineraryType": "Round-trip",
+			"returnDate": "2023-09-27",
+			"numAdults": 1,
+			"classOfService": "First Class",
+			"price": 1100,
+			"airline": "Delta Airlines",
+			"departureTime": "11:45 AM",
+			"arrivalTime": "07:15 PM",
+			"layovers": 1,
+			"outboundDuration": "7 hours 30 minutes",
+			"returnDuration": "7 hours 30 minutes"
+		},
+		{
+			"id": 7,
+			"sourceAirportCode": "JFK",
+			"destinationAirportCode": "SFO",
+			"date": "2023-09-20",
+			"itineraryType": "One-way",
+			"returnDate": "",
+			"numAdults": 1,
+			"classOfService": "Business",
+			"price": 750,
+			"airline": "American Airlines",
+			"departureTime": "09:30 AM",
+			"arrivalTime": "01:30 PM",
+			"layovers": 0,
+			"duration": "4 hours"
+		}
+	]
 }

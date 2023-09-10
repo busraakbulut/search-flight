@@ -8,7 +8,7 @@ const Loading = () => {
 			<Image
 				src={loadingImage}
 				alt="Loading"
-				className="rounded rounded-b-md"
+				className=" rounded-3xl w-28 h-28"
 			/>
 		</div>
 	);

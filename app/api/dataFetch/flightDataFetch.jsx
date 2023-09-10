@@ -1,25 +1,35 @@
 const fetchFlightData = async (formData) => {
 	try {
 		const response = await fetch("http://localhost:3005/flights", {
-			method: "POST",
+			method: "GET",
 			headers: {
 				"Content-Type": "application/json",
 			},
-			body: JSON.stringify(formData),
 		});
 
 		if (response.ok) {
 			const data = await response.json();
-
-			const filteredData = {};
+			const filteredData = [];
+			let isFilterData = false;
 
 			for (const key in data) {
-				if (formData.hasOwnProperty(key) && data[key] === formData[key]) {
-					filteredData[key] = data[key];
+				for (const property in formData.formData) {
+					if (
+						formData.formData.hasOwnProperty(property) &&
+						formData.formData[property] == data[key][property]
+					) {
+						isFilterData = true;
+					} else {
+						isFilterData = false;
+						break;
+					}
+				}
+				if (isFilterData === true) {
+					filteredData.push(data[key]);
 				}
 			}
-
 			console.log(filteredData);
+			return filteredData;
 		} else {
 			console.error("Veri çekme başarısız oldu");
 		}
