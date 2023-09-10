@@ -1,19 +1,35 @@
 {
-  "name": "search-flight",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "autoprefixer": "10.4.15",
-    "next": "13.4.19",
-    "postcss": "8.4.29",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3"
-  }
+	"name": "search-flight",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"json-server": "npx json-server --watch ./mockData/airportCodes.json -p 3004",
+		"json-server2": "npx json-server --watch ./mockData/flights.json -p 3005",
+		"all": "npm-run-all --parallel json-server json-server2 dev"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"@mui/material": "^5.14.8",
+		"@reduxjs/toolkit": "^1.9.5",
+		"autoprefixer": "10.4.15",
+		"axios": "^1.5.0",
+		"formik": "^2.4.4",
+		"json-server": "^0.17.3",
+		"next": "13.4.19",
+		"npm-run-all": "^4.1.5",
+		"postcss": "8.4.29",
+		"react": "18.2.0",
+		"react-datepicker": "^4.16.0",
+		"react-dom": "18.2.0",
+		"react-redux": "^8.1.2",
+		"redux": "^4.2.1",
+		"sweetalert2": "^11.7.27",
+		"tailwindcss": "3.3.3",
+		"yup": "^1.2.0"
+	}
 }

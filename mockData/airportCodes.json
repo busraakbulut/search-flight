@@ -1,0 +1,46 @@
+{
+	"airportCodes": [
+		{
+			"key": 1,
+			"code": "JFK",
+			"name": "John F. Kennedy International Airport",
+			"city": "New York",
+			"country": "United States"
+		},
+		{
+			"key": 2,
+			"code": "LAX",
+			"name": "Los Angeles International Airport",
+			"city": "Los Angeles",
+			"country": "United States"
+		},
+		{
+			"key": 3,
+			"code": "SFO",
+			"name": "San Francisco International Airport",
+			"city": "San Francisco",
+			"country": "United States"
+		},
+		{
+			"key": 4,
+			"code": "ORD",
+			"name": "O'Hare International Airport",
+			"city": "Chicago",
+			"country": "United States"
+		},
+		{
+			"key": 5,
+			"code": "DFW",
+			"name": "Dallas/Fort Worth International Airport",
+			"city": "Dallas",
+			"country": "United States"
+		},
+		{
+			"key": 6,
+			"code": "MIA",
+			"name": "Miami International Airport",
+			"city": "Miami",
+			"country": "United States"
+		}
+	]
+}
