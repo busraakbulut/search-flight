@@ -11,8 +11,6 @@ const fetchFlightData = async (formData) => {
 		if (response.ok) {
 			const data = await response.json();
 
-			// Assuming `data` is an object with flight information
-
 			const filteredData = {};
 
 			for (const key in data) {

@@ -165,6 +165,42 @@
         "returnDate": ""
       },
       "id": 12
+    },
+    {
+      "formData": {
+        "sourceAirportCode": "JFK",
+        "destinationAirportCode": "LAX",
+        "date": "2023-09-15",
+        "itineraryType": "oneway",
+        "numAdults": "2",
+        "classOfService": "economy",
+        "returnDate": ""
+      },
+      "id": 13
+    },
+    {
+      "formData": {
+        "sourceAirportCode": "JFK",
+        "destinationAirportCode": "LAX",
+        "date": "2023-09-15",
+        "itineraryType": "oneway",
+        "numAdults": "2",
+        "classOfService": "economy",
+        "returnDate": ""
+      },
+      "id": 14
+    },
+    {
+      "formData": {
+        "sourceAirportCode": "LAX",
+        "destinationAirportCode": "SFO",
+        "date": "2023-09-15",
+        "itineraryType": "oneway",
+        "numAdults": "2",
+        "classOfService": "economy",
+        "returnDate": ""
+      },
+      "id": 15
     }
   ]
 }

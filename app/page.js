@@ -2,9 +2,10 @@
 
 import InputField from "@/components/input/Input";
 import DatePicker from "@/components/datepicker/DatePicker";
-import React, { useState } from "react";
-import { flightSchema } from "@/validationSchema/flightSchema";
+import React, { useState, useEffect } from "react";
+import Autocomplete from "@mui/material/Autocomplete";
 import flightDataFetch from "@/app/api/dataFetch/flightDataFetch";
+import airportCodesDataFetch from "@/app/api/dataFetch/airportCodesDataFetch";
 
 const page = () => {
 	const [formData, setFormData] = useState({
@@ -18,10 +19,20 @@ const page = () => {
 	});
 	const [date, setDate] = useState("");
 	const [returnDate, setReturnDate] = useState("");
+	const [airportCodes, setAirportCodes] = useState([]);
+	const [sourceAirportCode, setSourceAirportCode] = useState(null);
+	const [destinationAirportCode, setDestinationAirportCode] = useState(null);
+
+	useEffect(() => {
+		airportCodesDataFetch().then((res) => {
+			setAirportCodes(res);
+		});
+	}, []);
 
 	const handleFormSubmit = async (e) => {
 		e.preventDefault();
 		flightDataFetch({ formData });
+		console.log(formData);
 	};
 
 	const handleDateChange = (newDate) => {
@@ -54,27 +65,67 @@ const page = () => {
 			<div className="bg-white shadow-md p-6 rounded-lg w-full md:w-1/2 lg:w-1/3 mb-4">
 				<h1>Flight Search</h1>
 				<form onSubmit={handleFormSubmit}>
-					<InputField
-						label="Source Airport"
-						name="sourceAirportCode"
-						type="text"
-						value={formData.sourceAirportCode}
-						onChange={(e) =>
-							setFormData({ ...formData, sourceAirportCode: e.target.value })
+					<Autocomplete
+						options={airportCodes}
+						onChange={(event, newValue) => {
+							if (newValue) {
+								let selectedId = newValue.code;
+								setSourceAirportCode(selectedId);
+								setFormData({
+									...formData,
+									sourceAirportCode: selectedId,
+								});
+							}
+						}}
+						value={
+							airportCodes.find(
+								(option) => option.code === sourceAirportCode
+							) || null
 						}
+						getOptionLabel={(option) => `${option.name} (${option.code})`}
+						renderInput={(params) => (
+							<InputField
+								type="text"
+								{...params}
+								label="Source Airport"
+								id="sourceAirportCode"
+								name="sourceAirportCode"
+								placeholder="Source Airport"
+								value={sourceAirportCode}
+							/>
+						)}
 					/>
-					<InputField
-						label="Destination Airport"
-						name="destinationAirportCode"
-						type="text"
-						value={formData.destinationAirportCode}
-						onChange={(e) =>
-							setFormData({
-								...formData,
-								destinationAirportCode: e.target.value,
-							})
+
+					<Autocomplete
+						options={airportCodes}
+						onChange={(event, newValue) => {
+							if (newValue) {
+								let selectedId = newValue.code;
+								setDestinationAirportCode(selectedId);
+								setFormData({
+									...formData,
+									destinationAirportCode: selectedId,
+								});
+							}
+						}}
+						value={
+							airportCodes.find(
+								(option) => option.code === destinationAirportCode
+							) || null
 						}
+						getOptionLabel={(option) => `${option.name} (${option.code})`}
+						renderInput={(params) => (
+							<InputField
+								type="text"
+								{...params}
+								label="Destination Airport"
+								id="destinationAirportCode"
+								name="destinationAirportCode"
+								placeholder="Destination Airport"
+							/>
+						)}
 					/>
+
 					<div className="flex">
 						<div className="flex-1 mr-2">
 							<label className="block text-[#4173a8] text-lg font-semibold mb-2">
